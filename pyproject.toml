@@ -1,0 +1,38 @@
+[project]
+name = "gen-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gagan Yadav", email = "gaganyadav2094@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-generativeai>=0.8.6",
+    "huggingface-hub>=1.27.0",
+    "langchain>=1.3.15",
+    "langchain-anthropic>=1.5.6",
+    "langchain-core>=1.5.4",
+    "langchain-google-genai>=4.3.3",
+    "langchain-huggingface>=1.2.2",
+    "langchain-openai>=1.4.3",
+    "numpy>=2.5.2",
+    "ollama>=0.6.2",
+    "openai>=2.54.0",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.9.0",
+    "streamlit>=1.63.0",
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+    "transformers>=5.15.0",
+]
+
+[project.scripts]
+gen-ai = "gen_ai:main"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu132"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
