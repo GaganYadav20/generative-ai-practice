@@ -1,10 +1,10 @@
 from langchain_core.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatOpenAI()
+model = ChatGoogleGenerativeAI()
 
 # detailed way
 template2 = PromptTemplate(
